@@ -1,0 +1,98 @@
+            Perrin Freres monthly champagne sales millions ?64-?72
+Month                                                             
+1964-01-01                                               2815     
+1964-02-01                                               2672     
+1964-03-01                                               2755     
+1964-04-01                                               2721     
+1964-05-01                                               2946     
+Performing stepwise search to minimize aic
+ ARIMA(2,0,2)(1,1,1)[12] intercept   : AIC=-50.502, Time=1.00 sec
+ ARIMA(0,0,0)(0,1,0)[12] intercept   : AIC=-41.975, Time=0.01 sec
+ ARIMA(1,0,0)(1,1,0)[12] intercept   : AIC=-54.968, Time=0.28 sec
+ ARIMA(0,0,1)(0,1,1)[12] intercept   : AIC=-53.384, Time=0.14 sec
+ ARIMA(0,0,0)(0,1,0)[12]             : AIC=-34.700, Time=0.01 sec
+ ARIMA(1,0,0)(0,1,0)[12] intercept   : AIC=-44.102, Time=0.01 sec
+ ARIMA(1,0,0)(2,1,0)[12] intercept   : AIC=-52.971, Time=0.61 sec
+ ARIMA(1,0,0)(1,1,1)[12] intercept   : AIC=-52.991, Time=0.44 sec
+ ARIMA(1,0,0)(0,1,1)[12] intercept   : AIC=-55.117, Time=0.33 sec
+ ARIMA(1,0,0)(0,1,2)[12] intercept   : AIC=-53.123, Time=0.33 sec
+ ARIMA(1,0,0)(1,1,2)[12] intercept   : AIC=inf, Time=0.91 sec
+ ARIMA(0,0,0)(0,1,1)[12] intercept   : AIC=-50.817, Time=0.12 sec
+ ARIMA(2,0,0)(0,1,1)[12] intercept   : AIC=-56.123, Time=0.59 sec
+ ARIMA(2,0,0)(0,1,0)[12] intercept   : AIC=-44.178, Time=0.03 sec
+ ARIMA(2,0,0)(1,1,1)[12] intercept   : AIC=-54.128, Time=0.50 sec
+ ARIMA(2,0,0)(0,1,2)[12] intercept   : AIC=-54.125, Time=0.78 sec
+ ARIMA(2,0,0)(1,1,0)[12] intercept   : AIC=-55.720, Time=0.13 sec
+ ARIMA(2,0,0)(1,1,2)[12] intercept   : AIC=inf, Time=1.19 sec
+ ARIMA(3,0,0)(0,1,1)[12] intercept   : AIC=-55.723, Time=0.25 sec
+ ARIMA(2,0,1)(0,1,1)[12] intercept   : AIC=-55.835, Time=0.71 sec
+ ARIMA(1,0,1)(0,1,1)[12] intercept   : AIC=-57.834, Time=0.57 sec
+ ARIMA(1,0,1)(0,1,0)[12] intercept   : AIC=-45.579, Time=0.05 sec
+ ARIMA(1,0,1)(1,1,1)[12] intercept   : AIC=-55.842, Time=1.27 sec
+ ARIMA(1,0,1)(0,1,2)[12] intercept   : AIC=-55.838, Time=2.01 sec
+ ARIMA(1,0,1)(1,1,0)[12] intercept   : AIC=-57.407, Time=0.29 sec
+ ARIMA(1,0,1)(1,1,2)[12] intercept   : AIC=-55.055, Time=1.77 sec
+ ARIMA(1,0,2)(0,1,1)[12] intercept   : AIC=-55.850, Time=0.46 sec
+ ARIMA(0,0,2)(0,1,1)[12] intercept   : AIC=-53.608, Time=0.16 sec
+ ARIMA(2,0,2)(0,1,1)[12] intercept   : AIC=-52.137, Time=0.50 sec
+ ARIMA(1,0,1)(0,1,1)[12]             : AIC=-56.684, Time=0.22 sec
+
+Best model:  ARIMA(1,0,1)(0,1,1)[12] intercept
+Total fit time: 15.672 seconds
+******************** fig1.png saved successfully ************************
+R2 score =  0.9546853581700161
+ ARIMA(0,1,0)(0,0,0)[0] intercept   : AIC=141.911, Time=0.01 sec
+ ARIMA(0,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.04 sec
+ ARIMA(0,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.05 sec
+ ARIMA(1,1,0)(0,0,0)[0] intercept   : AIC=141.540, Time=0.01 sec
+ ARIMA(1,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.06 sec
+ ARIMA(1,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.05 sec
+ ARIMA(2,1,0)(0,0,0)[0] intercept   : AIC=139.851, Time=0.01 sec
+ ARIMA(2,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.05 sec
+ ARIMA(2,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.03 sec
+ ARIMA(3,1,0)(0,0,0)[0] intercept   : AIC=138.023, Time=0.01 sec
+ ARIMA(3,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.06 sec
+ ARIMA(3,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.05 sec
+ ARIMA(4,1,0)(0,0,0)[0] intercept   : AIC=114.336, Time=0.02 sec
+ ARIMA(4,1,1)(0,0,0)[0] intercept   : AIC=114.576, Time=0.04 sec
+ ARIMA(4,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.08 sec
+ ARIMA(5,1,0)(0,0,0)[0] intercept   : AIC=114.173, Time=0.03 sec
+ ARIMA(5,1,1)(0,0,0)[0] intercept   : AIC=116.168, Time=0.06 sec
+ ARIMA(5,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.14 sec
+ ARIMA(6,1,0)(0,0,0)[0] intercept   : AIC=116.155, Time=0.04 sec
+ ARIMA(6,1,1)(0,0,0)[0] intercept   : AIC=118.024, Time=0.08 sec
+ ARIMA(6,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.17 sec
+ ARIMA(7,1,0)(0,0,0)[0] intercept   : AIC=112.569, Time=0.06 sec
+ ARIMA(7,1,1)(0,0,0)[0] intercept   : AIC=104.790, Time=0.10 sec
+ ARIMA(7,1,2)(0,0,0)[0] intercept   : AIC=107.810, Time=0.18 sec
+ ARIMA(8,1,0)(0,0,0)[0] intercept   : AIC=85.830, Time=0.14 sec
+ ARIMA(8,1,1)(0,0,0)[0] intercept   : AIC=56.517, Time=0.31 sec
+ ARIMA(8,1,2)(0,0,0)[0] intercept   : AIC=36.732, Time=0.46 sec
+ ARIMA(9,1,0)(0,0,0)[0] intercept   : AIC=83.083, Time=0.16 sec
+ ARIMA(9,1,1)(0,0,0)[0] intercept   : AIC=56.837, Time=0.33 sec
+ ARIMA(9,1,2)(0,0,0)[0] intercept   : AIC=60.427, Time=0.38 sec
+ ARIMA(10,1,0)(0,0,0)[0] intercept   : AIC=65.099, Time=0.32 sec
+ ARIMA(10,1,1)(0,0,0)[0] intercept   : AIC=38.178, Time=0.42 sec
+ ARIMA(10,1,2)(0,0,0)[0] intercept   : AIC=13.210, Time=0.39 sec
+ ARIMA(11,1,0)(0,0,0)[0] intercept   : AIC=inf, Time=0.58 sec
+ ARIMA(11,1,1)(0,0,0)[0] intercept   : AIC=-16.192, Time=0.38 sec
+ ARIMA(11,1,2)(0,0,0)[0] intercept   : AIC=-17.519, Time=0.80 sec
+ ARIMA(12,1,0)(0,0,0)[0] intercept   : AIC=inf, Time=0.44 sec
+ ARIMA(12,1,1)(0,0,0)[0] intercept   : AIC=-19.813, Time=0.88 sec
+ ARIMA(12,1,2)(0,0,0)[0] intercept   : AIC=-18.035, Time=0.48 sec
+
+Best model:  ARIMA(12,1,1)(0,0,0)[0] intercept
+Total fit time: 7.916 seconds
+******************** fig2.png saved successfully ************************
+R2 score =  0.9719528796163882
+******************** fig3.png saved successfully ************************
+******************** fig4.png saved successfully ************************
+******************** fig5.png saved successfully ************************
+******************** fig6.png saved successfully ************************
+******************** fig7.png saved successfully ************************
+DICKY FULLER TEST : LogSales is NOT STATIONARY
+(-2.255118601284439, 0.1868517311168691, 13, 91, {'1%': -3.50434289821397, '5%': -2.8938659630479413, '10%': -2.5840147047458037}, -49.191437515829875)
+DICKY FULLER TEST : LogSales Difference is STATIONARY
+(-4.4609144652536505, 0.00023121404649534196, 12, 91, {'1%': -3.50434289821397, '5%': -2.8938659630479413, '10%': -2.5840147047458037}, -43.637996321286465)
+******************** fig8.png saved successfully ************************
+R2 score =  0.9869148069402622
