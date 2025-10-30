@@ -1,0 +1,418 @@
+Performing stepwise search to minimize aic
+ ARIMA(2,0,2)(1,1,1)[12] intercept   : AIC=inf, Time=1.95 sec
+ ARIMA(0,0,0)(0,1,0)[12] intercept   : AIC=1022.234, Time=0.01 sec
+ ARIMA(1,0,0)(1,1,0)[12] intercept   : AIC=906.857, Time=0.60 sec
+ ARIMA(0,0,1)(0,1,1)[12] intercept   : AIC=963.555, Time=0.31 sec
+ ARIMA(0,0,0)(0,1,0)[12]             : AIC=1192.711, Time=0.01 sec
+ ARIMA(1,0,0)(0,1,0)[12] intercept   : AIC=907.180, Time=0.05 sec
+ ARIMA(1,0,0)(2,1,0)[12] intercept   : AIC=908.543, Time=0.64 sec
+ ARIMA(1,0,0)(1,1,1)[12] intercept   : AIC=inf, Time=0.51 sec
+ ARIMA(1,0,0)(0,1,1)[12] intercept   : AIC=907.120, Time=0.19 sec
+ ARIMA(1,0,0)(2,1,1)[12] intercept   : AIC=inf, Time=1.64 sec
+ ARIMA(0,0,0)(1,1,0)[12] intercept   : AIC=1021.611, Time=0.11 sec
+ ARIMA(2,0,0)(1,1,0)[12] intercept   : AIC=906.396, Time=0.31 sec
+ ARIMA(2,0,0)(0,1,0)[12] intercept   : AIC=906.075, Time=0.04 sec
+ ARIMA(2,0,0)(0,1,1)[12] intercept   : AIC=906.713, Time=0.19 sec
+ ARIMA(2,0,0)(1,1,1)[12] intercept   : AIC=inf, Time=0.52 sec
+ ARIMA(3,0,0)(0,1,0)[12] intercept   : AIC=905.686, Time=0.09 sec
+ ARIMA(3,0,0)(1,1,0)[12] intercept   : AIC=906.124, Time=0.38 sec
+ ARIMA(3,0,0)(0,1,1)[12] intercept   : AIC=906.388, Time=0.31 sec
+ ARIMA(3,0,0)(1,1,1)[12] intercept   : AIC=906.035, Time=0.75 sec
+ ARIMA(4,0,0)(0,1,0)[12] intercept   : AIC=907.453, Time=0.12 sec
+ ARIMA(3,0,1)(0,1,0)[12] intercept   : AIC=907.583, Time=0.13 sec
+ ARIMA(2,0,1)(0,1,0)[12] intercept   : AIC=906.399, Time=0.07 sec
+ ARIMA(4,0,1)(0,1,0)[12] intercept   : AIC=909.320, Time=0.14 sec
+ ARIMA(3,0,0)(0,1,0)[12]             : AIC=911.907, Time=0.03 sec
+
+Best model:  ARIMA(3,0,0)(0,1,0)[12] intercept
+Total fit time: 9.114 seconds
+                                     SARIMAX Results                                      
+==========================================================================================
+Dep. Variable:                                  y   No. Observations:                  132
+Model:             SARIMAX(3, 0, 0)x(0, 1, 0, 12)   Log Likelihood                -447.843
+Date:                            Thu, 30 Oct 2025   AIC                            905.686
+Time:                                    18:15:33   BIC                            919.623
+Sample:                                01-01-1949   HQIC                           911.346
+                                     - 12-01-1959                                         
+Covariance Type:                              opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept      5.5341      2.007      2.757      0.006       1.600       9.468
+ar.L1          0.7049      0.095      7.393      0.000       0.518       0.892
+ar.L2          0.2574      0.131      1.968      0.049       0.001       0.514
+ar.L3         -0.1434      0.107     -1.338      0.181      -0.354       0.067
+sigma2       101.0969     12.818      7.887      0.000      75.974     126.220
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                 2.83
+Prob(Q):                              0.96   Prob(JB):                         0.24
+Heteroskedasticity (H):               1.41   Skew:                            -0.14
+Prob(H) (two-sided):                  0.29   Kurtosis:                         3.70
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+******************** fig1.png saved successfully ************************
+******************** fig2.png saved successfully ************************
+Performing stepwise search to minimize aic
+ ARIMA(2,0,2)(1,1,1)[12] intercept   : AIC=-438.990, Time=1.57 sec
+ ARIMA(0,0,0)(0,1,0)[12] intercept   : AIC=-317.949, Time=0.02 sec
+ ARIMA(1,0,0)(1,1,0)[12] intercept   : AIC=-433.027, Time=0.97 sec
+ ARIMA(0,0,1)(0,1,1)[12] intercept   : AIC=-383.189, Time=0.18 sec
+ ARIMA(0,0,0)(0,1,0)[12]             : AIC=-134.983, Time=0.01 sec
+ ARIMA(2,0,2)(0,1,1)[12] intercept   : AIC=-444.323, Time=0.96 sec
+ ARIMA(2,0,2)(0,1,0)[12] intercept   : AIC=-414.783, Time=0.17 sec
+ ARIMA(2,0,2)(0,1,2)[12] intercept   : AIC=-442.329, Time=4.49 sec
+ ARIMA(2,0,2)(1,1,0)[12] intercept   : AIC=-436.713, Time=1.07 sec
+ ARIMA(2,0,2)(1,1,2)[12] intercept   : AIC=inf, Time=2.54 sec
+ ARIMA(1,0,2)(0,1,1)[12] intercept   : AIC=-445.575, Time=0.48 sec
+ ARIMA(1,0,2)(0,1,0)[12] intercept   : AIC=-414.732, Time=0.10 sec
+ ARIMA(1,0,2)(1,1,1)[12] intercept   : AIC=-443.170, Time=0.69 sec
+ ARIMA(1,0,2)(0,1,2)[12] intercept   : AIC=-443.385, Time=1.82 sec
+ ARIMA(1,0,2)(1,1,0)[12] intercept   : AIC=-436.146, Time=0.56 sec
+ ARIMA(1,0,2)(1,1,2)[12] intercept   : AIC=inf, Time=2.12 sec
+ ARIMA(0,0,2)(0,1,1)[12] intercept   : AIC=-416.893, Time=0.59 sec
+ ARIMA(1,0,1)(0,1,1)[12] intercept   : AIC=-447.284, Time=0.37 sec
+ ARIMA(1,0,1)(0,1,0)[12] intercept   : AIC=-416.167, Time=0.09 sec
+ ARIMA(1,0,1)(1,1,1)[12] intercept   : AIC=-445.169, Time=0.91 sec
+ ARIMA(1,0,1)(0,1,2)[12] intercept   : AIC=-445.266, Time=2.30 sec
+ ARIMA(1,0,1)(1,1,0)[12] intercept   : AIC=-439.764, Time=0.90 sec
+ ARIMA(1,0,1)(1,1,2)[12] intercept   : AIC=inf, Time=3.99 sec
+ ARIMA(1,0,0)(0,1,1)[12] intercept   : AIC=-442.847, Time=0.58 sec
+ ARIMA(2,0,1)(0,1,1)[12] intercept   : AIC=-446.292, Time=0.73 sec
+ ARIMA(0,0,0)(0,1,1)[12] intercept   : AIC=-327.548, Time=0.39 sec
+ ARIMA(2,0,0)(0,1,1)[12] intercept   : AIC=-448.052, Time=0.91 sec
+ ARIMA(2,0,0)(0,1,0)[12] intercept   : AIC=-417.188, Time=0.04 sec
+ ARIMA(2,0,0)(1,1,1)[12] intercept   : AIC=-445.737, Time=0.58 sec
+ ARIMA(2,0,0)(0,1,2)[12] intercept   : AIC=-446.060, Time=1.44 sec
+ ARIMA(2,0,0)(1,1,0)[12] intercept   : AIC=-440.423, Time=0.57 sec
+ ARIMA(2,0,0)(1,1,2)[12] intercept   : AIC=inf, Time=1.72 sec
+ ARIMA(3,0,0)(0,1,1)[12] intercept   : AIC=-446.258, Time=0.43 sec
+ ARIMA(3,0,1)(0,1,1)[12] intercept   : AIC=-444.359, Time=0.99 sec
+ ARIMA(2,0,0)(0,1,1)[12]             : AIC=-440.546, Time=0.39 sec
+
+Best model:  ARIMA(2,0,0)(0,1,1)[12] intercept
+Total fit time: 35.682 seconds
+                                      SARIMAX Results                                       
+============================================================================================
+Dep. Variable:                                    y   No. Observations:                  132
+Model:             SARIMAX(2, 0, 0)x(0, 1, [1], 12)   Log Likelihood                 229.026
+Date:                              Thu, 30 Oct 2025   AIC                           -448.052
+Time:                                      18:16:09   BIC                           -434.114
+Sample:                                  01-01-1949   HQIC                          -442.392
+                                       - 12-01-1959                                         
+Covariance Type:                                opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept      0.0193      0.009      2.161      0.031       0.002       0.037
+ar.L1          0.5997      0.083      7.260      0.000       0.438       0.762
+ar.L2          0.2415      0.085      2.850      0.004       0.075       0.408
+ma.S.L12      -0.5672      0.105     -5.416      0.000      -0.772      -0.362
+sigma2         0.0012      0.000      8.189      0.000       0.001       0.002
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                 6.12
+Prob(Q):                              1.00   Prob(JB):                         0.05
+Heteroskedasticity (H):               0.36   Skew:                             0.07
+Prob(H) (two-sided):                  0.00   Kurtosis:                         4.10
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+******************** fig3.png saved successfully ************************
+******************** fig4.png saved successfully ************************
+Non-logged RMSE: 18.536468695501895
+Logged RMSE: 23.055119108655536
+ ARIMA(0,0,0)(0,0,0)[0]             : AIC=826.758, Time=0.01 sec
+ ARIMA(0,0,1)(0,0,0)[0]             : AIC=inf, Time=0.03 sec
+ ARIMA(0,0,2)(0,0,0)[0]             : AIC=inf, Time=0.04 sec
+ ARIMA(1,0,0)(0,0,0)[0]             : AIC=inf, Time=0.02 sec
+ ARIMA(1,0,1)(0,0,0)[0]             : AIC=-209.510, Time=0.03 sec
+ ARIMA(1,0,2)(0,0,0)[0]             : AIC=-211.836, Time=0.06 sec
+ ARIMA(2,0,0)(0,0,0)[0]             : AIC=inf, Time=0.04 sec
+ ARIMA(2,0,1)(0,0,0)[0]             : AIC=inf, Time=0.05 sec
+ ARIMA(2,0,2)(0,0,0)[0]             : AIC=-207.116, Time=0.07 sec
+ ARIMA(3,0,0)(0,0,0)[0]             : AIC=inf, Time=0.07 sec
+ ARIMA(3,0,1)(0,0,0)[0]             : AIC=inf, Time=0.07 sec
+ ARIMA(3,0,2)(0,0,0)[0]             : AIC=-211.010, Time=0.07 sec
+ ARIMA(4,0,0)(0,0,0)[0]             : AIC=inf, Time=0.06 sec
+ ARIMA(4,0,1)(0,0,0)[0]             : AIC=inf, Time=0.08 sec
+ ARIMA(4,0,2)(0,0,0)[0]             : AIC=inf, Time=0.10 sec
+ ARIMA(5,0,0)(0,0,0)[0]             : AIC=inf, Time=0.10 sec
+ ARIMA(5,0,1)(0,0,0)[0]             : AIC=-206.722, Time=0.12 sec
+ ARIMA(5,0,2)(0,0,0)[0]             : AIC=-220.858, Time=0.13 sec
+ ARIMA(6,0,0)(0,0,0)[0]             : AIC=inf, Time=0.13 sec
+ ARIMA(6,0,1)(0,0,0)[0]             : AIC=16.000, Time=0.05 sec
+ ARIMA(6,0,2)(0,0,0)[0]             : AIC=-218.710, Time=0.15 sec
+ ARIMA(7,0,0)(0,0,0)[0]             : AIC=inf, Time=0.27 sec
+ ARIMA(7,0,1)(0,0,0)[0]             : AIC=-214.341, Time=0.22 sec
+ ARIMA(7,0,2)(0,0,0)[0]             : AIC=-235.194, Time=0.21 sec
+ ARIMA(8,0,0)(0,0,0)[0]             : AIC=inf, Time=0.34 sec
+ ARIMA(8,0,1)(0,0,0)[0]             : AIC=-208.463, Time=0.75 sec
+ ARIMA(8,0,2)(0,0,0)[0]             : AIC=-238.968, Time=0.24 sec
+ ARIMA(9,0,0)(0,0,0)[0]             : AIC=inf, Time=0.20 sec
+ ARIMA(9,0,1)(0,0,0)[0]             : AIC=-211.746, Time=0.69 sec
+ ARIMA(9,0,2)(0,0,0)[0]             : AIC=24.000, Time=0.11 sec
+ ARIMA(10,0,0)(0,0,0)[0]             : AIC=inf, Time=0.48 sec
+ ARIMA(10,0,1)(0,0,0)[0]             : AIC=-238.652, Time=1.01 sec
+ ARIMA(10,0,2)(0,0,0)[0]             : AIC=26.000, Time=0.49 sec
+ ARIMA(11,0,0)(0,0,0)[0]             : AIC=inf, Time=1.82 sec
+ ARIMA(11,0,1)(0,0,0)[0]             : AIC=-237.434, Time=1.54 sec
+ ARIMA(11,0,2)(0,0,0)[0]             : AIC=-261.383, Time=0.89 sec
+ ARIMA(12,0,0)(0,0,0)[0]             : AIC=inf, Time=1.33 sec
+ ARIMA(12,0,1)(0,0,0)[0]             : AIC=-254.968, Time=0.73 sec
+ ARIMA(12,0,2)(0,0,0)[0]             : AIC=-304.690, Time=0.55 sec
+
+Best model:  ARIMA(12,0,2)(0,0,0)[0]          
+Total fit time: 13.379 seconds
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                  132
+Model:              SARIMAX(12, 0, 2)   Log Likelihood                 167.345
+Date:                Thu, 30 Oct 2025   AIC                           -304.690
+Time:                        18:16:22   BIC                           -261.448
+Sample:                    01-01-1949   HQIC                          -287.118
+                         - 12-01-1959                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.0607      0.081      0.754      0.451      -0.097       0.219
+ar.L2          0.1851      0.097      1.916      0.055      -0.004       0.374
+ar.L3          0.0773      0.099      0.784      0.433      -0.116       0.271
+ar.L4         -0.0892      0.078     -1.148      0.251      -0.241       0.063
+ar.L5          0.0642      0.078      0.824      0.410      -0.088       0.217
+ar.L6          0.0654      0.080      0.820      0.412      -0.091       0.222
+ar.L7         -0.0442      0.085     -0.522      0.601      -0.210       0.122
+ar.L8         -0.0956      0.084     -1.142      0.253      -0.260       0.068
+ar.L9          0.0250      0.081      0.309      0.758      -0.134       0.184
+ar.L10         0.0830      0.075      1.099      0.272      -0.065       0.231
+ar.L11        -0.1043      0.079     -1.312      0.189      -0.260       0.051
+ar.L12         0.7725      0.081      9.533      0.000       0.614       0.931
+ma.L1          0.9396      0.095      9.902      0.000       0.754       1.126
+ma.L2          0.6336      0.079      8.040      0.000       0.479       0.788
+sigma2         0.0039      0.001      6.690      0.000       0.003       0.005
+===================================================================================
+Ljung-Box (L1) (Q):                   3.71   Jarque-Bera (JB):                 0.92
+Prob(Q):                              0.05   Prob(JB):                         0.63
+Heteroskedasticity (H):               0.49   Skew:                             0.20
+Prob(H) (two-sided):                  0.02   Kurtosis:                         3.01
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+******************** fig5.png saved successfully ************************
+******************** fig6.png saved successfully ************************
+RMSE ERROR is:  57.03046098693687
+ ARIMA(0,1,0)(0,0,0)[0] intercept   : AIC=1277.589, Time=0.01 sec
+ ARIMA(0,1,1)(0,0,0)[0] intercept   : AIC=1264.738, Time=0.03 sec
+ ARIMA(0,1,2)(0,0,0)[0] intercept   : AIC=1262.608, Time=0.03 sec
+ ARIMA(0,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.09 sec
+ ARIMA(0,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.15 sec
+ ARIMA(0,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.15 sec
+ ARIMA(0,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.20 sec
+ ARIMA(0,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.27 sec
+ ARIMA(0,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.41 sec
+ ARIMA(0,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.40 sec
+ ARIMA(0,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.52 sec
+ ARIMA(0,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=0.86 sec
+ ARIMA(0,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.69 sec
+ ARIMA(1,1,0)(0,0,0)[0] intercept   : AIC=1268.313, Time=0.02 sec
+ ARIMA(1,1,1)(0,0,0)[0] intercept   : AIC=1258.440, Time=0.04 sec
+ ARIMA(1,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.08 sec
+ ARIMA(1,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.13 sec
+ ARIMA(1,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.15 sec
+ ARIMA(1,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.19 sec
+ ARIMA(1,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.21 sec
+ ARIMA(1,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.31 sec
+ ARIMA(1,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.29 sec
+ ARIMA(1,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.43 sec
+ ARIMA(1,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.49 sec
+ ARIMA(1,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=0.83 sec
+ ARIMA(1,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.54 sec
+ ARIMA(2,1,0)(0,0,0)[0] intercept   : AIC=1263.896, Time=0.02 sec
+ ARIMA(2,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.07 sec
+ ARIMA(2,1,2)(0,0,0)[0] intercept   : AIC=1218.683, Time=0.09 sec
+ ARIMA(2,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.14 sec
+ ARIMA(2,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.17 sec
+ ARIMA(2,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.18 sec
+ ARIMA(2,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.19 sec
+ ARIMA(2,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.32 sec
+ ARIMA(2,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.31 sec
+ ARIMA(2,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.82 sec
+ ARIMA(2,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=1.30 sec
+ ARIMA(2,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=2.24 sec
+ ARIMA(2,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=1.97 sec
+ ARIMA(3,1,0)(0,0,0)[0] intercept   : AIC=1261.216, Time=0.03 sec
+ ARIMA(3,1,1)(0,0,0)[0] intercept   : AIC=inf, Time=0.06 sec
+ ARIMA(3,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.10 sec
+ ARIMA(3,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.15 sec
+ ARIMA(3,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.15 sec
+ ARIMA(3,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.18 sec
+ ARIMA(3,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.31 sec
+ ARIMA(3,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.96 sec
+ ARIMA(3,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.45 sec
+ ARIMA(3,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.62 sec
+ ARIMA(3,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.43 sec
+ ARIMA(3,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=0.66 sec
+ ARIMA(3,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.80 sec
+ ARIMA(4,1,0)(0,0,0)[0] intercept   : AIC=1254.439, Time=0.04 sec
+ ARIMA(4,1,1)(0,0,0)[0] intercept   : AIC=1245.588, Time=0.12 sec
+ ARIMA(4,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.14 sec
+ ARIMA(4,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.14 sec
+ ARIMA(4,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.20 sec
+ ARIMA(4,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.25 sec
+ ARIMA(4,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.30 sec
+ ARIMA(4,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.48 sec
+ ARIMA(4,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.56 sec
+ ARIMA(4,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.77 sec
+ ARIMA(4,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.54 sec
+ ARIMA(4,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=0.73 sec
+ ARIMA(4,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.53 sec
+ ARIMA(5,1,0)(0,0,0)[0] intercept   : AIC=1256.151, Time=0.06 sec
+ ARIMA(5,1,1)(0,0,0)[0] intercept   : AIC=1247.185, Time=0.22 sec
+ ARIMA(5,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.12 sec
+ ARIMA(5,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.16 sec
+ ARIMA(5,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.19 sec
+ ARIMA(5,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.26 sec
+ ARIMA(5,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.33 sec
+ ARIMA(5,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.79 sec
+ ARIMA(5,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.37 sec
+ ARIMA(5,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=1.06 sec
+ ARIMA(5,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=1.69 sec
+ ARIMA(5,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=3.13 sec
+ ARIMA(5,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=1.23 sec
+ ARIMA(6,1,0)(0,0,0)[0] intercept   : AIC=1252.415, Time=0.15 sec
+ ARIMA(6,1,1)(0,0,0)[0] intercept   : AIC=1246.387, Time=0.25 sec
+ ARIMA(6,1,2)(0,0,0)[0] intercept   : AIC=inf, Time=0.17 sec
+ ARIMA(6,1,3)(0,0,0)[0] intercept   : AIC=1210.870, Time=0.23 sec
+ ARIMA(6,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.25 sec
+ ARIMA(6,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.26 sec
+ ARIMA(6,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.34 sec
+ ARIMA(6,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.58 sec
+ ARIMA(6,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.47 sec
+ ARIMA(6,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=0.63 sec
+ ARIMA(6,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.72 sec
+ ARIMA(6,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=1.08 sec
+ ARIMA(6,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=1.06 sec
+ ARIMA(7,1,0)(0,0,0)[0] intercept   : AIC=1252.659, Time=0.09 sec
+ ARIMA(7,1,1)(0,0,0)[0] intercept   : AIC=1212.214, Time=0.27 sec
+ ARIMA(7,1,2)(0,0,0)[0] intercept   : AIC=1215.269, Time=0.22 sec
+ ARIMA(7,1,3)(0,0,0)[0] intercept   : AIC=inf, Time=0.30 sec
+ ARIMA(7,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=0.27 sec
+ ARIMA(7,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.33 sec
+ ARIMA(7,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.32 sec
+ ARIMA(7,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=0.62 sec
+ ARIMA(7,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.43 sec
+ ARIMA(7,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=1.08 sec
+ ARIMA(7,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=1.16 sec
+ ARIMA(7,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=1.34 sec
+ ARIMA(7,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=3.44 sec
+ ARIMA(8,1,0)(0,0,0)[0] intercept   : AIC=1210.583, Time=1.57 sec
+ ARIMA(8,1,1)(0,0,0)[0] intercept   : AIC=1178.144, Time=0.42 sec
+ ARIMA(8,1,2)(0,0,0)[0] intercept   : AIC=1180.440, Time=0.66 sec
+ ARIMA(8,1,3)(0,0,0)[0] intercept   : AIC=1171.032, Time=1.38 sec
+ ARIMA(8,1,4)(0,0,0)[0] intercept   : AIC=inf, Time=nan sec
+ ARIMA(8,1,5)(0,0,0)[0] intercept   : AIC=1143.683, Time=0.43 sec
+ ARIMA(8,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.52 sec
+ ARIMA(8,1,7)(0,0,0)[0] intercept   : AIC=1141.408, Time=0.65 sec
+ ARIMA(8,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=0.60 sec
+ ARIMA(8,1,9)(0,0,0)[0] intercept   : AIC=1120.676, Time=0.86 sec
+ ARIMA(8,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=0.94 sec
+ ARIMA(8,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=1.10 sec
+ ARIMA(8,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.85 sec
+ ARIMA(9,1,0)(0,0,0)[0] intercept   : AIC=1206.774, Time=0.31 sec
+ ARIMA(9,1,1)(0,0,0)[0] intercept   : AIC=1177.544, Time=0.26 sec
+ ARIMA(9,1,2)(0,0,0)[0] intercept   : AIC=1179.072, Time=0.75 sec
+ ARIMA(9,1,3)(0,0,0)[0] intercept   : AIC=1144.652, Time=0.37 sec
+ ARIMA(9,1,4)(0,0,0)[0] intercept   : AIC=1147.699, Time=0.51 sec
+ ARIMA(9,1,5)(0,0,0)[0] intercept   : AIC=inf, Time=0.79 sec
+ ARIMA(9,1,6)(0,0,0)[0] intercept   : AIC=inf, Time=0.94 sec
+ ARIMA(9,1,7)(0,0,0)[0] intercept   : AIC=inf, Time=1.32 sec
+ ARIMA(9,1,8)(0,0,0)[0] intercept   : AIC=inf, Time=2.25 sec
+ ARIMA(9,1,9)(0,0,0)[0] intercept   : AIC=inf, Time=2.18 sec
+ ARIMA(9,1,10)(0,0,0)[0] intercept   : AIC=inf, Time=2.12 sec
+ ARIMA(9,1,11)(0,0,0)[0] intercept   : AIC=inf, Time=1.14 sec
+ ARIMA(9,1,12)(0,0,0)[0] intercept   : AIC=inf, Time=0.88 sec
+ ARIMA(10,1,0)(0,0,0)[0] intercept   : AIC=inf, Time=0.46 sec
+ ARIMA(10,1,1)(0,0,0)[0] intercept   : AIC=1101.963, Time=0.48 sec
+ ARIMA(10,1,2)(0,0,0)[0] intercept   : AIC=1055.497, Time=0.56 sec
+ ARIMA(10,1,3)(0,0,0)[0] intercept   : AIC=1055.321, Time=0.67 sec
+ ARIMA(10,1,4)(0,0,0)[0] intercept   : AIC=1051.647, Time=0.67 sec
+ ARIMA(10,1,5)(0,0,0)[0] intercept   : AIC=1060.402, Time=0.70 sec
+ ARIMA(10,1,6)(0,0,0)[0] intercept   : AIC=1030.213, Time=0.81 sec
+ ARIMA(10,1,7)(0,0,0)[0] intercept   : AIC=1027.914, Time=0.59 sec
+ ARIMA(10,1,8)(0,0,0)[0] intercept   : AIC=1027.672, Time=0.95 sec
+ ARIMA(10,1,9)(0,0,0)[0] intercept   : AIC=1072.074, Time=1.07 sec
+ ARIMA(10,1,10)(0,0,0)[0] intercept   : AIC=1034.822, Time=1.19 sec
+ ARIMA(10,1,11)(0,0,0)[0] intercept   : AIC=1034.887, Time=1.12 sec
+ ARIMA(10,1,12)(0,0,0)[0] intercept   : AIC=1037.986, Time=1.90 sec
+ ARIMA(11,1,0)(0,0,0)[0] intercept   : AIC=inf, Time=1.80 sec
+ ARIMA(11,1,1)(0,0,0)[0] intercept   : AIC=1075.067, Time=1.82 sec
+ ARIMA(11,1,2)(0,0,0)[0] intercept   : AIC=1039.183, Time=0.95 sec
+ ARIMA(11,1,3)(0,0,0)[0] intercept   : AIC=1036.324, Time=1.58 sec
+ ARIMA(11,1,4)(0,0,0)[0] intercept   : AIC=1034.868, Time=0.73 sec
+ ARIMA(11,1,5)(0,0,0)[0] intercept   : AIC=1033.513, Time=0.53 sec
+ ARIMA(11,1,6)(0,0,0)[0] intercept   : AIC=1028.051, Time=0.72 sec
+ ARIMA(11,1,7)(0,0,0)[0] intercept   : AIC=1029.901, Time=0.73 sec
+ ARIMA(11,1,8)(0,0,0)[0] intercept   : AIC=1025.965, Time=0.88 sec
+ ARIMA(11,1,9)(0,0,0)[0] intercept   : AIC=1036.119, Time=1.02 sec
+ ARIMA(11,1,10)(0,0,0)[0] intercept   : AIC=1036.441, Time=0.99 sec
+ ARIMA(11,1,11)(0,0,0)[0] intercept   : AIC=1039.628, Time=0.90 sec
+ ARIMA(11,1,12)(0,0,0)[0] intercept   : AIC=1035.277, Time=0.96 sec
+ ARIMA(12,1,0)(0,0,0)[0] intercept   : AIC=inf, Time=1.00 sec
+ ARIMA(12,1,1)(0,0,0)[0] intercept   : AIC=1022.780, Time=0.51 sec
+ ARIMA(12,1,2)(0,0,0)[0] intercept   : AIC=1020.062, Time=0.95 sec
+ ARIMA(12,1,3)(0,0,0)[0] intercept   : AIC=1019.725, Time=0.74 sec
+ ARIMA(12,1,4)(0,0,0)[0] intercept   : AIC=1021.376, Time=1.56 sec
+ ARIMA(12,1,5)(0,0,0)[0] intercept   : AIC=1021.539, Time=2.96 sec
+ ARIMA(12,1,6)(0,0,0)[0] intercept   : AIC=1023.298, Time=1.61 sec
+ ARIMA(12,1,7)(0,0,0)[0] intercept   : AIC=1024.659, Time=2.24 sec
+ ARIMA(12,1,8)(0,0,0)[0] intercept   : AIC=1026.618, Time=1.03 sec
+ ARIMA(12,1,9)(0,0,0)[0] intercept   : AIC=1029.519, Time=0.86 sec
+ ARIMA(12,1,10)(0,0,0)[0] intercept   : AIC=1030.978, Time=0.96 sec
+ ARIMA(12,1,11)(0,0,0)[0] intercept   : AIC=1030.677, Time=1.48 sec
+ ARIMA(12,1,12)(0,0,0)[0] intercept   : AIC=1031.868, Time=1.38 sec
+
+Best model:  ARIMA(12,1,3)(0,0,0)[0] intercept
+Total fit time: 117.754 seconds
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                      y   No. Observations:                  132
+Model:              SARIMAX(12, 1, 3)   Log Likelihood                -492.862
+Date:                Thu, 30 Oct 2025   AIC                           1019.725
+Time:                        18:18:20   BIC                           1068.603
+Sample:                    01-01-1949   HQIC                          1039.586
+                         - 12-01-1959                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+intercept      6.1234      4.828      1.268      0.205      -3.340      15.587
+ar.L1         -0.0383      0.222     -0.172      0.863      -0.473       0.397
+ar.L2         -0.3248      0.169     -1.927      0.054      -0.655       0.006
+ar.L3         -0.0907      0.214     -0.424      0.672      -0.510       0.329
+ar.L4         -0.2907      0.151     -1.923      0.055      -0.587       0.006
+ar.L5         -0.0640      0.189     -0.338      0.735      -0.435       0.307
+ar.L6         -0.3188      0.151     -2.117      0.034      -0.614      -0.024
+ar.L7         -0.0657      0.197     -0.333      0.739      -0.452       0.321
+ar.L8         -0.3278      0.157     -2.088      0.037      -0.635      -0.020
+ar.L9         -0.0604      0.193     -0.312      0.755      -0.439       0.319
+ar.L10        -0.3236      0.164     -1.977      0.048      -0.644      -0.003
+ar.L11        -0.0456      0.197     -0.231      0.817      -0.432       0.341
+ar.L12         0.6259      0.160      3.906      0.000       0.312       0.940
+ma.L1         -0.1453      0.235     -0.619      0.536      -0.605       0.314
+ma.L2          0.3305      0.180      1.839      0.066      -0.022       0.683
+ma.L3         -0.1863      0.218     -0.855      0.393      -0.613       0.241
+sigma2        96.1869     16.059      5.990      0.000      64.712     127.662
+===================================================================================
+Ljung-Box (L1) (Q):                   0.05   Jarque-Bera (JB):                 9.45
+Prob(Q):                              0.82   Prob(JB):                         0.01
+Heteroskedasticity (H):               1.92   Skew:                            -0.13
+Prob(H) (two-sided):                  0.03   Kurtosis:                         4.29
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
+******************** fig7.png saved successfully ************************
+RMSE ERROR is:  19.51227365392291
