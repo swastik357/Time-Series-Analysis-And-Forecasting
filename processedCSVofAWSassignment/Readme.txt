@@ -37,3 +37,6 @@ df.head() :
 2018-01-04	240.423019	240.909883	239.475900	240.060120	80636400.0
 2018-01-05	242.025238	242.149149	240.724026	241.219723	83524000.0
 2018-01-06	NaN	NaN	NaN	NaN	NaN
+
+In related_schema, "AttributeName":"open_value" instead of "open" because open is a RESERVED KEYWORD on Amazon forecast.
+      
