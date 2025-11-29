@@ -39,4 +39,10 @@ df.head() :
 2018-01-06	NaN	NaN	NaN	NaN	NaN
 
 In related_schema, "AttributeName":"open_value" instead of "open" because open is a RESERVED KEYWORD on Amazon forecast.
+
+By default, Forecast computes wQL (Weighted Quantile Loss (wQL)) at 0.1 (P10), 0.5 (P50), and 0.9 (P90).
+
+P10 (0.1) - The true value is expected to be lower than the predicted value 10% of the time.
+P50 (0.5) - The true value is expected to be lower than the predicted value 50% of the time. This is also known as the median forecast.
+P90 (0.9) - The true value is expected to be lower than the predicted value 90% of the time.
       
